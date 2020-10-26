@@ -1,0 +1,28 @@
+﻿<div class="container border row pt-2 mt-2">
+    <div class="col-6">
+        <h2 class="text-primary">Lista de Filme</h2>
+    </div>
+    <div class="col-3 offset-3">
+        <a asp-action="InserirAtualizar" asp-controller="Filme" class="btn btn-primary form-control text-white">
+            Inserir Novo Filme
+        </a>
+    </div>
+    <div class="col-12 p-3">
+        <table id="tblData" class="table table-primary table-bordered" style="width:100%">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Título</th>
+                    <th>Data de Lançamento</th>
+                    <th>Genero</th>
+                    <th>Preço</th>
+                    <th></th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+</div>
+
+@section Scripts{
+    <script src="~/js/filme.js"></script>
+}
